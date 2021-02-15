@@ -1,0 +1,110 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url("resources/fonts/Roboto-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    background-color: white;
+    color: black;
+    font-family: Impact;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background-color: #3f3f3f;
+    width: 100vw;
+    height: 6vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    font-size: 20px;
+    margin: 40px;
+    width: 15%;
+    /* border: 1px solid white; */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: white;
+}
+
+nav a:hover {
+    animation-name: nav_a_hover;
+    animation-duration: 2s;
+    color: orange;
+    font-size: 30px;
+}
+
+header {
+    margin: 2vw;
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: #3f3f3f;
+    color: white;
+    width: 100vw;
+    height: 5vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+footer span {
+    width: 20vw;
+    margin-left: 40vw;
+    margin-right: 40vw;
+}
+
+footer a {
+    color: white;
+}
+
+#o_mnie {
+    width: 40%;
+    height: 20%;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    font-size: 30px;
+    padding: 1vw;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
+@keyframes nav_a_hover {
+    from {
+        color: white;
+        font-size: 20px;
+        margin: 40px;
+        width: 12.5%;
+    }
+    to {
+        color: orange;
+        font-size: 30px;
+    }
+}
